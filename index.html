@@ -82,19 +82,19 @@
             display: block;
         }
 
-        #pQualMusicaTitulo{
+        #pQualMusicaTitulo {
             font-size: 22px;
             color: white;
             font-weight: bold;
         }
 
-        #pQualMusicaTexto{
+        #pQualMusicaTexto {
             font-size: 18px;
             color: white;
             margin-bottom: 30px;
         }
 
-        #pQualMusicaDescricao{
+        #pQualMusicaDescricao {
             font-size: 18px;
             color: #5c0606;
         }
@@ -109,7 +109,8 @@
             display: flex;
             gap: 10px;
             align-items: flex-start;
-            cursor: pointer; /* Torna o cursor de clique visível */
+            cursor: pointer;
+        
         }
 
         .card img {
@@ -142,6 +143,7 @@
                 <a href="#" onclick="showPage('jogos-da-memoria')">🧠 Jogos da Memória</a>
                 <a href="#" onclick="showPage('complete-a-frase')">✍️ Complete a Frase</a>
                 <a href="#" onclick="showPage('caca-palavras')">🔤 Caça-Palavras</a>
+                <a href="#" onclick="showPage('palavras-cruzadas')">🧩 Palavras Cruzadas</a>
                 <a href="#" onclick="showPage('quemsomos')">👤 Quem Somos</a>
                 <a href="#" onclick="showPage('configuracoes')">⚙️ Configurações</a>
                 <a href="#" onclick="showPage('faleconosco')">✉️ Fale Conosco</a>
@@ -153,42 +155,32 @@
     <!-- Conteúdo das páginas -->
     <div id="qualmusica" class="main-content">
         <p id="pQualMusicaTitulo">Esta é a página do jogo "Qual é a Música?"</p>
-        <p id="pQualMusicaTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum facere aperiam harum iure, molestiae fugit nisi tempora eius totam officiis a ratione quidem laudantium tenetur nam modi reprehenderit aut.</p>
-       
-        <div class="card"
-             onclick="abrirJogo('https://radialistaedsonleite.github.io/jogos-HTML')"
-             style="cursor: pointer;">
+        <p id="pQualMusicaTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+        <div class="card" onclick="location.href='https://passatempomusical.github.io/qualmusica1'">
             <img src="capa1.jpeg" alt="Qual é a Música?">
             <div class="card-text">
                 <h2>1971, INTERNACIONAL 1</h2>
-                <p id="pQualMusicaDescricao">
-                    Tente adivinhar a música a partir de trechos instrumentais ou frases! Teste seus conhecimentos musicais e
-                    desafie seus amigos.
-                </p>
+                <p id="pQualMusicaDescricao">Tente adivinhar a música a partir de trechos instrumentais ou frases!</p>
             </div>
         </div>
+        
 
-        <div class="card" onclick="abrirJogo('https://radialistaedsonleite.github.io/jogos-HTML')" style="cursor: pointer;">
+        <div class="card" onclick="abrirJogo('https://radialistaedsonleite.github.io/jogos-HTML')">
             <img src="capa2.png" alt="Qual é a Música?">
             <div class="card-text">
                 <h2>1971 INTERNACIONAL 2</h2>
-                <p id="pQualMusicaDescricao">
-                    Agora sim, estou no segundo div do jogo...
-                </p>
+                <p id="pQualMusicaDescricao">Agora sim, estou no segundo div do jogo...</p>
             </div>
         </div>
-        
-        
     </div>
-
 
     <div id="jogos-da-memoria" class="main-content">
         <div class="card">
             <img src="https://via.placeholder.com/100?text=Memória" alt="Jogos da Memória">
             <div class="card-text">
                 <h2>Jogos da Memória</h2>
-                <p>Treine sua mente com desafios musicais divertidos. Combine imagens e sons para ganhar pontos e subir
-                    no ranking!</p>
+                <p>Treine sua mente com desafios musicais divertidos...</p>
             </div>
         </div>
     </div>
@@ -198,7 +190,7 @@
             <img src="https://via.placeholder.com/100?text=Frase" alt="Complete a Frase">
             <div class="card-text">
                 <h2>Complete a Frase</h2>
-                <p>Complete letras de músicas famosas que marcaram época. Será que você lembra de todas as palavras?</p>
+                <p>Complete letras de músicas famosas que marcaram época...</p>
             </div>
         </div>
     </div>
@@ -208,8 +200,18 @@
             <img src="https://via.placeholder.com/100?text=Palavras" alt="Caça-Palavras">
             <div class="card-text">
                 <h2>Caça-Palavras</h2>
-                <p>Encontre nomes de cantores, bandas e músicas escondidos entre as letras! Um desafio viciante para os
-                    fãs de música.</p>
+                <p>Encontre nomes de cantores, bandas e músicas escondidos entre as letras!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="palavras-cruzadas" class="main-content">
+        <div class="card" onclick="abrirJogo('https://passatempomusical.github.io/quemCanta/')">
+            <img src="https://passatempomusical.github.io/quemCanta/" alt="Palavras Cruzadas">
+            <div class="card-text">
+                <h2>Palavras Cruzadas</h2>
+                <p>Um desafio de raciocínio com palavras e pistas musicais. Teste seu vocabulário e seus conhecimentos
+                    sobre o mundo da música!</p>
             </div>
         </div>
     </div>
@@ -219,8 +221,7 @@
             <img src="https://via.placeholder.com/100?text=Equipe" alt="Quem Somos">
             <div class="card-text">
                 <h2>Quem Somos</h2>
-                <p>Somos apaixonados por música e tecnologia! Criamos jogos educativos para divertir, ensinar e conectar
-                    pessoas através da música.</p>
+                <p>Somos apaixonados por música e tecnologia!</p>
             </div>
         </div>
     </div>
@@ -240,8 +241,7 @@
             <img src="https://via.placeholder.com/100?text=Contato" alt="Fale Conosco">
             <div class="card-text">
                 <h2>Fale Conosco</h2>
-                <p>Tem sugestões, dúvidas ou encontrou algum problema? Entre em contato conosco e responderemos o mais
-                    breve possível.</p>
+                <p>Tem sugestões, dúvidas ou encontrou algum problema?</p>
             </div>
         </div>
     </div>
@@ -282,15 +282,12 @@
                 dropdown.style.display = "none";
             }
         });
+
+        function abrirJogo(url) {
+                window.location.href = url;
+            }
+
     </script>
-
-<script>
-    function abrirJogo(url) {
-        window.open(url, '_blank');
-
-    }
-</script>
-
 
 </body>
 
